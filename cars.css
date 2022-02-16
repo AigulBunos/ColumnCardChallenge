@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+
+body {
+    font-family: 'Lexend-Deca', sans-serif;
+    font-size: 15px;
+    color: #f2f2f2;
+    background-color:#f2f2f2;
+    min-height: 100vh;
+    letter-spacing: 0.8px;
+    
+}
+
+/*    main div*/
+.grid-container {
+    width: 70vw;
+    display:grid;
+    margin: 0 auto;
+    margin-top: 150px;
+    height: 600px;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-areas:
+    "sedan suv lux"
+    "sedan suv lux"
+    "sedan suv lux"
+    ;
+  
+}
+
+.column1, .column2, .column3 {
+    padding: 70px;
+    gap: 50px;
+    /* border: 2px solid red; */
+}
+
+.column1>img, .column2>img, .column3>img {
+    width: 70px;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */ 
+} 
+
+.column1 {
+    background-color: #e38826;
+    border-radius: 10px 0 0 10px;
+    grid-area: sedan;
+}
+
+.column2 {
+    background-color: #006970;
+    grid-area: suv;
+    
+}
+
+.column3 {
+    background-color: #004241;
+    border-radius: 0 10px 10px 0;
+    grid-area: lux;
+}
+
+h2{
+    font-family: 'Big-Shoulders-Display', sans-serif;
+    font-weight: 700;
+    font-size: 2.8em;
+    font-style: normal;
+    text-transform: uppercase;
+}
+h2:hover{
+    color: #923ea3;
+}
+
+p {
+    line-height: 1.7rem;
+    font-size: 1em;
+    font-family: 'Lexend-Deca', sans-serif;
+    color: #ffffffbf;
+}
+
+/*Buttons*/
+
+.learnMore {
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    background-color: #f2f2f2;
+    border:#f2f2f2;
+    transition: 500ms ease;
+    font-weight: bolder;
+    position:absolute;
+    margin-top: 100px;
+}
+
+.learnMore:hover {
+    cursor:pointer;
+    background-color: transparent;
+    color: #ffffffbf;
+}
+
+.column1 .learnMore{
+    color: #e38826;
+}
+
+.column2 .learnMore {
+    color: #006970;
+}
+
+.column3 .learnMore {
+    color: #004241;
+}
+
+/*Footer*/
+
+.attribution {
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    position:relative;
+    bottom: 8%;
+    left: 25%;
+    right: 25%;
+    width: min(80%, 600px);
+    font-family: 'Big-Shoulders-Display', cursive;
+    color: #923ea3;
+    margin-top: 100px;  
+  
+}
+
+.attribution a {
+    color: #923ea3;
+}
